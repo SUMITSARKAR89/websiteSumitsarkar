@@ -108,8 +108,8 @@
     }
     nav ul li:last-child{
         display: block;
-        margin-top: 32px;
-        margin-right: 20px;
+        margin-top: 15px;
+        margin-right: 30px;
         max-width: 100%;
         background: none;
         background-color: var(--bg-blue);

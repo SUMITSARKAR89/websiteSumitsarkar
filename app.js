@@ -1,17 +1,15 @@
  // ==========================cursor===============================
-  const cursorPointer = document.querySelector(".cursor");
-
-//  window.addEventListener('mousemove', (e) => {
-
-//      let x = e.pageX;
-//      let y = e.pageY;
-
-//      cursorPointer.style.left = `${x}px`;
-//      cursorPointer.style.top = `${y}px`;
-
-
-//  });
-
+ const cursorDot = document.querySelector(".cursor");
+ window.addEventListener('mousemove', (e) => {
+    const x = e.pageX;
+    const y = e.pageY;
+    
+    cursorDot.forEach( dot => {
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+    })
+ })
+ 
 //  ===========================menu===================================
 
 const sideBar = document.querySelector("#sidebar");
