@@ -1,0 +1,81 @@
+Description of Services:
+
+Complete Website Development
+Design and Layout (Vs code, Figma)
+icon and Favicon (3 differernt link)
+font customizing (True)
+Frontend Development (HTML, CSS, JavaScript)
+React N/A
+Backend Development (false)
+Testing and QA (Bug Fixes, Performance Optimization)
+Deployment and Launch (false)
+Responsive Website (true)
+
+Elements & Empliment I used on framework
+1. nav (scroll view)
+2. dropdown & tooltips
+3. slide Menu bar
+4. CV link and scroll btn
+5. Counter 
+6. system animation
+7. Tab bar & toogle top header
+8.  skill bar animation
+9. slide carousol
+10. range slider
+11. card and content filter btn
+12. asider with scroll behaviour
+13. testimonial slider
+14. accordion
+15. letter box
+16. footer container
+
+Extra Empliment
+
+1. message box
+    a. toast bar
+    b. snackbar
+2. top scroll toggle
+
+Section and article 
+1. header section
+    a. navbar
+    b. menu bar
+    c. profile viewer
+2. main section
+    a. hero
+    b. about
+    c. tools 
+    d. skill & expertise
+    e. topics
+    f. more topics
+    g. work templete
+    h. more work templete
+    i. testimonial
+    j. FAQ accordion & contect
+3. footer section  
+    a. social link
+    b. address
+    c. custom link
+
+Responsive:
+1280px
+1120px
+1020px
+980px
+760px
+680px
+570px
+475px
+350px
+
+JavaScript Resolve:
+1. Cursor cursorPointer (not active)
+2. Menu scrollbarNavigation
+3. navbar scrollHeight
+4. number counter
+5. Tab scroll auto slide
+6. more moreTemplete Empliment (not active)
+7. toogle topScroll
+8. massage toastbox & snackbar
+9. featureFilter btn
+10. accordion -->
