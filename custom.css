@@ -109,25 +109,10 @@
         color: var(--default-white);
         transition:  all 0.5s ease-in-out;
         overflow-X: hidden;
-        cursor: none;
-        
+       
         
     }
     
-    .cursor{
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-    }
-    .cursor-in{
-      background-color: var(--text-orange);
-    }
-    .cursor-out{
-      border: 1px solid var(--text-orange);
-    }
     
     h1{
          
@@ -290,6 +275,7 @@
     align-items: center;
     border-bottom: 1px solid var(--bg-grey-blue);
     padding: 5px 0;
+    animation: msg-icon 2s linear infinite alternate;
    }
    .sidebar-logo img{
     max-width: 100%;
@@ -749,10 +735,11 @@
  }
  .hero-content .title{
     margin-top: 10px;
+    
  }
  .hero-content .title span{
-    font-size: var(--font-a);
-    font-weight: 700;
+    font-size: var(--font-p);
+    font-weight: 800;
     color: #0ea5ea;
     
  }
@@ -765,6 +752,7 @@
     font-size: var(--font-p);
     color: var(--text-offWhite);
     transition: 0.6s;
+   font-weight: 600;
  }
  .title .title-box{
     display: flex;
@@ -1051,6 +1039,7 @@
    cursor: pointer;
    transform: scale(1);
    transition: var(--transition-1);
+   animation: msg-icon 2s linear infinite alternate;
 }
 .tools-items img:hover{
    transform: scale(1.1);
@@ -2281,6 +2270,7 @@ span#new-popup{
    position: absolute;
    top: 22px;
   left: 43%;
+  animation: msg-icon 2s linear infinite alternate;
  }
  #contact .contact-me{
    max-width: 100%;
@@ -2387,6 +2377,7 @@ span#new-popup{
    position: absolute;
    top: -60px;
    right: 27%;
+   animation: msg-icon 2s linear infinite alternate;
 }
 .contact-form{
    max-width: 100%;
@@ -2475,10 +2466,54 @@ form #input-submit-btn:hover{
    top: 53px;
    
    right: 10px;
+   
 }
 #m-mark-user{
    top: 8px;
    right: 10px;
+
+}
+
+.contact-form .contact-toast-box{
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   padding: 10px 8px;
+   max-width: 70%;
+   width: 100%;
+   color: var(--default-black);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+
+  position: absolute;
+   bottom: 80px;
+   left: 50px;
+   border-radius: 5px;
+   animation: zoom 0.3s , linear;
+   background-color: var(--text-offWhite);
+}
+.contact-toast-box i{
+   color: var(--default-white);
+   background-color: rgb(43, 129, 43);
+   padding: 4px;
+   font-size: 9px;
+   border-radius: 50%;
+   opacity: 1;
+}
+.contact-toast-box-submit{
+   font-weight: 400;
+   opacity: 0.8;
+   animation: zoom 0.3s , linear;
+   
+}
+span.contact-denger{
+   font-size: var(--font-9);
+   text-transform: capitalize;
+   color: #0bd1d1;
+   display: none;
+   animation: zoom 0.3s , linear;
+   text-align: center;
+   padding: 0 0 5px 0 ;
 
 }
 
@@ -2673,6 +2708,7 @@ form #input-submit-btn:hover{
    transition: var(--transition-1);
    transform: scale(1);
    cursor: pointer;
+   animation: msg-icon 2s linear infinite alternate;
 
 }
 .footer-card .footer-logo:hover{
@@ -2822,8 +2858,30 @@ form #input-submit-btn:hover{
    gap: 5px;
    margin-top: -5px;
 }
-
-
+.submit-toast-box{
+   max-width: 210px;
+   padding:13px 10px;
+   background-color: var(--default-white);
+   height: auto;
+   position: relative;
+   color: #000;
+   border-radius: 5px;
+   display: none;
+   
+}
+.submit-toast-body{
+display: flex;
+align-items: center;
+justify-content: space-around;
+gap: 5px;
+}
+.submit-toast-body i{
+   color: green;
+   font-size: var(--font-btn);
+}
+.submit-toast-body span{
+   font-size: var(--font-8);
+}
 
 
 
@@ -2877,7 +2935,12 @@ form #input-submit-btn:hover{
    right: 25px;
    cursor: pointer;
    transition: var(--transition-1);
+   animation: msg-icon 2s linear infinite alternate;
   
+}
+@keyframes msg-icon {
+   0%{transform: translateY(3px) }
+   100%{transform: translateY(0);}
 }
 .msg-box:hover{
    bottom: 73px;
@@ -2926,102 +2989,162 @@ form #input-submit-btn:hover{
    opacity: 1;
  }
 .msg-modal-box{
-   background-color: var(--bg-blue);
+   backdrop-filter: blur(15px);
    max-width: 320px;
-   height: 130px;
+   height: auto;
    position: fixed;
+   padding-top: 15px;
    bottom: 40px;
    right: 60px;
-   border-radius: 10px;
+   border-radius: 5px;
    display: none;
    z-index: 3;
    animation: zoom 0.3s , linear;
+   border: 2px double var(--text-orange);
+   animation: toast 10s linear infinite alternate;
 
 }
-.msg-modal-box textarea{
-   resize: none;
-   border-radius: 10px;
+.modal-box-form{
+   padding: 2px;
+   max-width: 100%;
+   margin: 0 auto;
    position: relative;
-   font-size: 0.8rem;
-   color: #000;
-   background-color: var(--default-white);
-   padding: 12px;
-   border: 1px solid var(--text-blue);
-   font-family: "Manrope", sans-serif;
+   margin-top: 40px;
+}
+.modal-box-form .top-form{
+   background-color: var(--bg-secondary);
+   top: -50px;
+   padding: 3px 5px;
+   border-radius: 8px;
+   right: 15px;
+   position: absolute;
+   width: 200px;
+   max-width: 100%;
 
 }
-.msg-modal-box textarea::placeholder{
-   color: var(--default-black);
+.top-form img.sent-img{
+
+   animation: toast 2s linear infinite alternate;
 }
-.msg-modal-box #msg-dlt{
+
+    
+ 
+ @keyframes toast {
+    0%{transform: translateX(8px) }
+    100%{transform: translateX(0);}
+ }
+    
+ 
+.top-form span.id{
+   font-size: var(--font-8);
+   margin-top: -3px;
+   font-weight: 600;
+   padding: 1px 5px;
+   display: block;
+   color: var(--text-white);
+}
+.modal-box-form #msg-dlt{
    position: absolute;
-   top: -3px;
-   right: 0px;
+   top: -60px;
+   right: -5px;
+   z-index: 1;
    cursor: pointer;
-   border-radius: 50%;
+   animation: zoom 0.3s , linear;
    transition: var(--transition-1);
    transform: scale(1);
-   /* animation: zoom 0.3s , linear; */
+}
+
+.modal-box-form #msg-dlt:hover{
+   transform: scale(1.07);
+}
+
+.modal-box-form form{
+   max-width: 100%;
+}
+.modal-box-form form input,
+.modal-box-form form textarea{
+   background-color: var(--text-white);
+   color: var(--default-black);
+   border-bottom: 1px solid #dad1d1;
+   text-transform: none;
+   border-radius: 5px;
+   margin: 2px;
+   width: 100%;
+   padding: 5px 10px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 500;
+}
+.modal-box-form form input::placeholder,
+.modal-box-form form textarea::placeholder{
+   color:var(--default-black);
+   font-weight: 600;
+   opacity: 0.4;
+   animation: zoom 0.5s , linear;
 
 }
-.msg-modal-box #msg-dlt:hover{
-   transform: scale(1.2);
-}
-.msg-modal-box #msg-btn{
-   position: absolute;
-   bottom: 5px;
-   right: 5px;
-   border: 0;
-   padding: 3px;
+#modalSubmit{
+   background-color: var(--text-orange);
+   border-radius: none;
+   max-width: 100%;
+   margin:0px auto;
+   color: var(--text-white);
+   font-weight: 600;
+   width: 100%;
    cursor: pointer;
-   background: none;
-   border: 1px solid transparent;
-   border-radius: 25px;
    transition: var(--transition-1);
+   animation: zoom 0.5s , linear;
+   border: 1px solid transparent;
 }
-.msg-modal-box #msg-btn:hover{
-   padding: 4px;
-   border: 1px solid green;
+#modalSubmit:hover{
+   background-color: var(--text-offWhite);
+   color: var(--text-orange);
+   border: 1px solid var(--text-orange);
 }
 #msg-snakebar{
-   position: fixed;
-   bottom: 70px;
-   z-index: 2;
-   right: 60px;
-   max-width: 160px;
-   height: auto;
-   background-color: var(--text-white);
-   padding:8px 12px;
-   border-radius: 5px;
-   display:none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 5px;
+}
+#msg-snakebar span{
+   padding: 5px 0;  
+   font-size: var(--font-8);
+   font-weight: 400;
+   
+}
+#msg-snakebar span.toast-box-danger{
+   color: var(--text-white);
+   text-transform: capitalize;
+   font-weight: 600;
+   display: none;
+   animation: zoom 0.3s , linear;
 }
 #msg-snakebar .toast-box{
-   display: flex;
-   justify-content: space-between;
-   gap: 10px;
-   align-items: center;
-   width: 100%;
-   position: relative;
-}
-#msg-snakebar .toast-box p{
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   padding: 3px 8px;
    color: var(--default-black);
-   font-size: var(--font-a);
-
+   display: none;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   border-radius: 5px;
+   animation: zoom 0.3s , linear;
+   background-color: var(--text-offWhite);
 }
-#msg-snakebar .toast-box i{
+.toast-box i{
    color: var(--default-white);
-   background-color: green;
-   padding: 5px;
-   font-size: var(--font-a);
+   background-color: rgb(43, 129, 43);
+   padding: 4px;
+   font-size: 9px;
    border-radius: 50%;
 }
-.toast-box span{
-   position: absolute;
-   color: var(--bg-secondary);
-   top: -10px;
-   right: -5px;
-   cursor: pointer;
+.toast-box-submit{
+   font-weight: 200;
+   
+   
 }
+
 
 
 

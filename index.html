@@ -135,7 +135,7 @@
                 </div>
                 <div class="title">
                     <div class="title-box">
-                    <span>#sumit_sarkar</span>
+                    <span style="margin-left: -5px;">#sumit_sarkar</span>
                     <span class="title-span">web developer</span>
                     </div>
                     <h1>Building Seamless and <b title="Responsive Website">User-Friendly</b> Websites for the Modern Web.</h1>
@@ -1031,21 +1031,28 @@
         
         
             </div> 
+            <!--  -->
 
             <div class="contact-container">
             <h6>letter box</h6>
             <img class="m-mark-img" src="image/sent.png" alt="" width="45px">
             <div class="contact-form">
                 <p>If you're looking for a web developer who can bring your ideas to life, let's connect. I’d love to discuss how I can help your project succeed.</p>
-                <form action="">
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name" >
+                <form action="https://formspree.io/f/xqaaqgyn" method="POST">
+                    <input type="text" name="name" id="contactName" placeholder="Enter Your Name"  required>
                     <img id="m-mark-user" src="image/user (1).png" alt="" width="24px">
                     <img id="m-mark-envelop" src="image/envelop1.png" alt="" width="24px">
-                    <input type="email" name="email" id="email" placeholder="Your Email Address">
-                    <textarea name="message" id="" placeholder="Tell me something good" cols="48" rows="7"></textarea>
-                    <input type="submit" value="submit" id="input-submit-btn">
+                    <input type="email" name="email" id="contactEmail" placeholder="Your Email Address" required>
+                    <textarea name="message" id="contactMsg" placeholder="Tell me something good" cols="48" rows="7" required></textarea>
+                    <input type="submit" value="submit" id="input-submit-btn" onclick="contactSubmit()">
 
                 </form>
+                <span class="contact-denger"> Please Fill up the Empty field</span>
+                <div class="contact-toast-box">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="contact-toast-box-submit">your message has been sent</span>  
+                </div>
+                
                 
             </div>
             </div>
@@ -1092,6 +1099,7 @@
                 <address>
                     <span>123 Old Dhaka</span>
                     <span>Dhaka, Bangladesh. </span>  
+                    <span  ><a href="#contact" style="color: orange;">sumitopticalit89@gmail.com</a> </span>  
                     <span>+880-1914-738-110 </span>  
                 </address>
                <div class="address-img">
@@ -1105,6 +1113,8 @@
                     <a href="https://www.linkedin.com/in/sumitsarkar89/" target="_blank" style="color: rgb(96, 96, 255);"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.behance.net/sumitsarkar89" target="_blank"><i class="fa-brands fa-behance" style="color: rgb(8, 104, 248);"></i></a>
                     <a href="https://www.youtube.com/@Sumit_sarkar89" target="_blank" style="color: rgb(247, 40, 40);"><i class="fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://wa.me/+8801914738110"><img src="image/whatsapp.png" alt="" width="20px"></a>
+
                 </div>
 
                 <p class="quotes"><q><em>Make things as simple as possible, but not simpler.</em></q>– Albert Einstein</p>
@@ -1134,26 +1144,42 @@
         <i class="msg-box " ><img src="image/mail.png" alt="message" width="27px"></i>
        
         <div class="msg-modal-box">
-            <textarea name="massage" id="" cols="35" rows="6" placeholder="Type your Message" ></textarea>
-            <img id="msg-dlt" src="image/delete-button.png" alt="" width="17px">
-            <a id="msg-btn" target="_blank" href="https://wa.me/+8801914738110"><img src="image/whatsapp.png" alt="" width="22px"></a>
 
-        </div>
-        <div id="msg-snakebar">
-            <div class="toast-box">
-                <i class="fa-solid fa-check"></i>
-                <p>your message has been sent</p>
-                <span id="toast-dlt">x</span>
+
+            <div class="modal-box-form">
+                <div class="top-form">
+                    <span ><img src="image/sent.png" alt="" width="25px" class="sent-img"></span>
+                    <span class="id">sumitopticalit89@gmail.com</span>
+                </div>
+                <img id="msg-dlt" src="image/delete-button.png" alt="" width="20px" title="Close">
+                <form action="https://formspree.io/f/xqaaqgyn" method="POST">
+                    <input type="text"  id="msgName" placeholder="Name"  style="text-transform: capitalize;" required> 
+                    <input type="email"   id="msgEmail" placeholder="Email address"  required>
+                    <textarea id="msgMassage"  cols="35" rows="6" placeholder="Type your Message"  style="border-bottom: 0;" required></textarea>
+                    
+                    <input type="submit" value="Send" id="modalSubmit" title="Send massage" onclick="submitmsgBox()">
+                </form>
+                <div id="msg-snakebar">
+                    <span class="toast-box-danger"> form can't be Empty</span>
+                    <div class="toast-box">
+                        <i class="fa-solid fa-check"></i>
+                        <span class="toast-box-submit">your message has been sent</span>  
+                    </div>
+        
+                </div>
+                
+
             </div>
 
         </div>
+       
         
      </div>
     
     <script src="app.js"></script>
 </body>
 </html>
-
+<!-- action="https://formspree.io/f/xqaaqgyn" method="POST" -->
 <!-- Description of Services:
 
 Complete Website Development

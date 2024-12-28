@@ -1,14 +1,14 @@
  // ==========================cursor===============================
- const cursorDot = document.querySelector(".cursor");
- window.addEventListener('mousemove', (e) => {
-    const x = e.pageX;
-    const y = e.pageY;
+//  const cursorDot = document.querySelector(".cursor");
+//  window.addEventListener('mousemove', (e) => {
+//     const x = e.pageX;
+//     const y = e.pageY;
     
-    cursorDot.forEach( dot => {
-        dot.style.left = `${x}px`;
-        dot.style.top = `${y}px`;
-    })
- })
+//     cursorDot.forEach( dot => {
+//         dot.style.left = `${x}px`;
+//         dot.style.top = `${y}px`;
+//     })
+//  })
  
 //  ===========================menu===================================
 
@@ -87,7 +87,7 @@ function showpanel(a,b,c){
     b.style.backgroundColor = c;
 }
 document.getElementById("default").click();
-//  ===================================================
+//  ========================topic===========================
 
 // == referance ==
 
@@ -181,43 +181,80 @@ window.addEventListener('scroll', () => {
         topScroll.classList.remove("active")
     }
 });
+// -----------------------------submit btn-----------------------
+function contactSubmit() {
+    let contactName = document.getElementById("contactName");
+    let contactEmail = document.getElementById("contactEmail");
+    let contactMsg = document.getElementById("contactMsg");
+    const contactToastBox = document.querySelector(".contact-toast-box");
+    const contactDenger = document.querySelector(".contact-denger");
 
+    if(contactName.value === '' || contactEmail.value === '' || contactMsg.value === ''){
+        contactDenger.style.display = "block";
+    }else{
+       setTimeout ( () => {
+        contactName.value = '';
+        contactEmail.value = '';
+        contactMsg.value = '';
+
+       }, 8000)
+       contactToastBox.style.display = "block";
+    }
+   
+
+    setTimeout ( () => {
+        contactDenger.style.display = "none";
+        contactToastBox.style.display = "none";
+    }, 5000)
+
+
+}
+ 
 // =============================massage box==========================
 
-const messageToggle = document.querySelector('.msg-box');
-const massageModalBox = document.querySelector('.msg-modal-box');
-const massageDlt = document.querySelector('#msg-dlt');
-const massageSend = document.querySelector('#msg-btn');
-const massageSnakeBar = document.querySelector('#msg-snakebar');
-const toastDlt = document.querySelector('#toast-dlt');
+const msgModalBox = document.querySelector(".msg-modal-box");
+const msgModalBoxIcon = document.querySelector(".msg-box");
+const msgModalBoxdlt = document.querySelector("#msg-dlt");
 
-const msgTooltips = document.querySelector('.msg-tooltips');
 
-massageSnakeBar.addEventListener('mouseover', () => {
-    msgTooltips.style.display = "none"
-
+msgModalBoxIcon.addEventListener('click', () => {
+    msgModalBox.style.display = "block";
 });
-massageSnakeBar.addEventListener('mouseout', () => {
-    msgTooltips.style.display = "block"
-
+msgModalBoxdlt.addEventListener('click', () =>{
+    msgModalBox.style.display = "none";
 });
 
-messageToggle.addEventListener('click', () =>{
-    massageModalBox.style.display = "block";
-});
 
-massageDlt.addEventListener('click', () =>{
-    massageModalBox.style.display = "none";
 
-});
-massageSend.addEventListener('click', () => {
-    massageModalBox.style.display = "none";
-    massageSnakeBar.style.display = "block";
+function submitmsgBox(){
+    // e.preventDefault();
+    let name = document.getElementById("msgName"); 
+    let email = document.getElementById("msgEmail"); 
+    let msg = document.getElementById("msgMassage"); 
+    const toastBoxDenger = document.querySelector(".toast-box-danger");
+    const toastBox = document.querySelector(".toast-box");
 
-});
-toastDlt.addEventListener('click', () => {
-    massageSnakeBar.style.display = "none";
-});
+    if(name.value === '' || email.value === '' || msg.value === '' ){
+        toastBoxDenger.style.display = "block";
+    }else{
+        setTimeout ( () => {
+            name.value = '';
+            email.value = '';
+            msg.value = '';
+
+        }, 4000);
+        toastBox.style.display = "block";
+    }
+
+    setTimeout ( () => {
+        toastBoxDenger.style.display = "none";
+        toastBox.style.display = "none";
+    }, 4000);
+}
+
+
+
+
 
 // ======================more topic======================
 
@@ -273,7 +310,11 @@ listFeatureBtn.addEventListener('click', () => {
 
 const upcomingBtn = document.querySelector('.upcoming-btn');
 upcomingBtn.addEventListener("mouseover", () => {
-    upcomingBtn.innerHTML = "Post is Unavailable";
+    if(upcomingBtn.innerHTML = "Upcoming post"){
+        upcomingBtn.innerHTML = "Post is Unavilable"
+    }else{
+        upcomingBtn.innerHTML = "upcoming post"
+    }
 });
 
 // ----------------------------------accordion----------------------------- 
@@ -293,3 +334,6 @@ for(i = 0; i < accordion.length; i++){
     });
 
 };
+
+
+// 
