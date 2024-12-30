@@ -9,12 +9,35 @@
 //         dot.style.top = `${y}px`;
 //     })
 //  })
+
+let darkmood = localStorage.getItem('darkmood');
+    const controlTheme = document.querySelector("#control");
+
+    const enableDarkmode = () => {
+        document.body.classList.add('darkmood')
+        localStorage.setItem('darkmood', 'active')
+    }
+
+    const disableDarkmood = () => {
+        document.body.classList.remove('darkmood')
+        localStorage.setItem('darkmood', null)
+    }
+
+    if(darkmood === "active") enableDarkmode()
+   
+    controlTheme.addEventListener("click", () => {
+
+        darkmood = localStorage.getItem('darkmood')
+        darkmood !== "active" ? enableDarkmode() : disableDarkmood()
+    })
  
 //  ===========================menu===================================
 
 const sideBar = document.querySelector("#sidebar");
 const menu = document.querySelector("#menu");
 const contactList = document.querySelector("#contact-list");
+const day = document.querySelector("#control");
+
 
 
 menu.addEventListener('click', () => {
@@ -22,13 +45,17 @@ menu.addEventListener('click', () => {
     sideBar.style.width = "300px";
     menu.style.opacity = "0";
     contactList.style.display = 'none';
+    day.style.display = "none";
+    
 
 });
 function crossbar(){
     sideBar.style.display = "none";
     menu.style.opacity = "1";
     contactList.style.display = 'block';
-    sideBar.style.width = "0px";   
+    sideBar.style.width = "0px"; 
+    day.style.display = "block";
+    
 };
 
 // ==========================nav bar scroll===================================

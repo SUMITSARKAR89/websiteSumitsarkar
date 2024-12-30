@@ -30,8 +30,7 @@
     <title> Introducing Sumit ...</title>
 </head>
 <body>
-    <div class="cursor cursor-out"></div>
-    <div class="cursor cursor-in "></div>
+    
     <!-- ==============================header============================== -->
    <header class="" >
     <div class="container head active-header" data-header>
@@ -59,22 +58,29 @@
                    
                 </li>
                 <li class="list"><a href="#contact" id="contact-list" >contact me</a></li>
+                
+                
             </ul>
-            <!-- <div class="mode">
-                <a href=""><img src="image/contrast.png" alt="" class="sun-icon" id="sun"></a>
-                <a href=""><img src="image/night-mode.png" alt="" class="dark-icon" id="dark"></a>
-            </div> -->
+            <div id="control">
+                
+                <img class="day" src="image/sun (2).png" alt="" width="25px" style="opacity: 0.8;">
+                <img class="night" src="image/moon.png" alt="" width="22px">
+                
+            </div>
+            
         </nav>
+        
         <div id="menu">
             <img src="image/menu-bar.png" alt="" class="menu-icon">
         </div>
+        
 
         <div id="sidebar" class="active-sidebar">
             
             <div class="sidebar-logo">
                 <img src="image/Untitled design (1).jpg" alt="" width="50px" title="sumitOpticalTech">
                 <li onclick=crossbar() class="menu-cross-btn" >
-                    <a href="#" title="Close"><i class="fa-regular fa-x "></i></a>
+                    <a href="#" title="Close"><i class="fa-regular fa-x " style="color:  rgb(228, 65, 15);"></i></a>
                 </li>
             </div>
 
@@ -120,11 +126,14 @@
             <p class="sidebar-fotter">Copyright © 2025 by Sumit Sarkar- portfolio website </p>
             
         </div>
+        
     </div>
+    
    </header>
   
    <!-- ==============================main============================== -->
    <main>
+    
     <!-- =============================hero section start here================  -->
     <section id="hero" title="I’m dedicated to continuous learning, staying up-to-date with the latest trends in web development.">
         <div class="hero-container">
@@ -136,7 +145,7 @@
                 <div class="title">
                     <div class="title-box">
                     <span style="margin-left: -5px;">#sumit_sarkar</span>
-                    <span class="title-span">web developer</span>
+                    <span class="title-span">front-End web developer</span>
                     </div>
                     <h1>Building Seamless and <b title="Responsive Website">User-Friendly</b> Websites for the Modern Web.</h1>
                     <div class="buttons">
@@ -165,7 +174,7 @@
     <section id="about" >
        
         <p class="about-text">
-            Hey, I am <span style="color:rgb(73, 200, 255)" title="website developer">Sumit Sarkar</span>, a website developer who loves turning ideas into beautiful and functional websites. I have strong skills in front-end technologies and focus on making sites easy to use, responsive, and visually appealing. Over the years, I’ve worked on projects ranging from small business sites to large e-commerce platforms, always aiming for quality and creativity.
+            Hey, I am <span style="color:rgb(236, 75, 11); font-weight: 800; font-size: 1.5rem; " title="website developer">Sumit Sarkar</span>, a website developer who loves turning ideas into beautiful and functional websites. I have strong skills in front-end technologies and focus on making sites easy to use, responsive, and visually appealing. Over the years, I’ve worked on projects ranging from small business sites to large e-commerce platforms, always aiming for quality and creativity.
         </p>
         <img src="image/bg-remove-sumit.png" alt="" class="remove-sumit">
         <div class="about-wrap-container">
@@ -302,7 +311,7 @@
                         </div>
             
                         <div class="skill-content">
-                            <h4 class="skill-name">React</h4>
+                            <h4 class="skill-name">React.JS</h4>
                             <div class="skill-box">
                                 <div class="rt-skill"></div>
                                 <div class="percentage">45%</div>
@@ -316,10 +325,10 @@
             <div class="skill-side-2">
                 <div class="expert-container">
                     <div class="button-box">
-                        <a class="btn" title="Hypertext Markup Language" id="default" onclick="showpanel('btn1', this, ' hsla(217, 17%, 48%, 1)')">HTML/5</a>
-                        <a class="btn" title="Cascading Style Sheet" onclick="showpanel('btn2', this, 'hsla(217, 17%, 48%, 1)')">CSS3</a>
-                        <a class="btn" title="JavaScript" onclick="showpanel('btn3', this, 'hsla(217, 17%, 48%, 1)')">JavaScript</a>
-                        <a class="btn" title="React JavaScript" onclick="showpanel('btn4', this, ' hsla(217, 17%, 48%, 1)')">React.JS</a>
+                        <a class="btn" title="Hypertext Markup Language" id="default" onclick="showpanel('btn1', this, ' #0bd1d1')">HTML/5</a>
+                        <a class="btn" title="Cascading Style Sheet" onclick="showpanel('btn2', this, '#0bd1d1')">CSS3</a>
+                        <a class="btn" title="JavaScript" onclick="showpanel('btn3', this, '#0bd1d1')">JavaScript</a>
+                        <a class="btn" title="React JavaScript" onclick="showpanel('btn4', this, ' #0bd1d1')">React.JS</a>
                     </div>
                     <div class="tabpanel" id="btn1" >
                         <p>Mastery in crafting semantic, accessible HTML that is optimized for SEO and performance. I use the latest HTML standards to structure content, ensuring clarity, accessibility, and search engine optimization.</p>
@@ -440,7 +449,7 @@
                             <span class="tips-tool">freelancer Tips</span>
                             <h6 class="tips-h6">The idea of freelancing working independently</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #idea #key_advantage</span>
@@ -455,7 +464,7 @@
                             <span class="tips-tool">feature Tips</span>
                             <h6 class="tips-h6">Visual appeal on a website is crucial for several reasons.</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 The visual design of a website is the first thing users notice. A clean, modern, and aesthetically pleasing design can instantly make a  .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #impression #support</span>
@@ -471,7 +480,7 @@
                             <span class="tips-tool">feature Tips</span>
                             <h6 class="tips-h6">Content is the heart of any website, and its important</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 Well-crafted, relevant content plays a pivotal role in attracting visitors, engaging them, and ultimately achieving business goals. Here' .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #Brand_value #Build_trust</span>
@@ -487,7 +496,7 @@
                             <span class="tips-tool">freelancer Tips</span>
                             <h6 class="tips-h6">some popular and effective ways to find freelance work online</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 Finding freelance work online has become easier thanks to the growing number of platforms and websites dedicated to connecting freelancers with clients. .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #job_idea #marketplace</span>
@@ -503,7 +512,7 @@
                             <span class="tips-tool">freelancer Tips</span>
                             <h6 class="tips-h6">Dreaming of becoming a freelancer in the web development sector</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 Web development is one of the most sought-after freelance skills because virtually every business today needs a website or web application. Here’s  .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #skill_groeth #Creative_control</span>
@@ -520,7 +529,7 @@
                             <span class="tips-tool">popular Tips</span>
                             <h6 class="tips-h6">Understand Your Target Audience</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 Developing a clear value proposition is essential for any business or freelancer, as it communicates the unique benefits and value you offer to your target audience .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #Solution #Target_audience</span>
@@ -536,7 +545,7 @@
                             <span class="tips-tool">feature Tips</span>
                             <h6 class="tips-h6">8 essential website features that every website should have</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 When building or optimizing a website, certain features are essential for ensuring a great user experience, enhancing functionality, and supporting business goals .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #security #seo_optimization</span>
@@ -552,7 +561,7 @@
                             <span class="tips-tool">feature Tips</span>
                             <h6 class="tips-h6">Tthe key characteristics that define a professional website</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 A professional website is designed to build trust, enhance credibility, and provide a seamless user experience .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #Analytics #Tracking</span>
@@ -568,7 +577,7 @@
                             <span class="tips-tool">popular Tips</span>
                             <h6 class="tips-h6">a few best personal website ideas for beginners</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 Creating a personal website as a beginner is a great way to showcase your skills, passions, and interests .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #innovation #key_advantage</span>
@@ -584,7 +593,7 @@
                             <span class="tips-tool">popular Tips</span>
                             <h6 class="tips-h6">several strategies to enhance both UX and SEO</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 Improving User Experience (UX) and Search Engine Optimization (SEO) on your website is crucial for both attracting visitors.... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #SEO #user_interface</span>
@@ -600,7 +609,7 @@
                             <span class="tips-tool">freelancer Tips</span>
                             <h6 class="tips-h6">The idea of freelancing working independently</h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 offering services to clients without being tied to a long-term employer. Freelancers typically have control over their .... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #idea #key_advantage</span>
@@ -616,7 +625,7 @@
                             <span class="tips-tool">popular Tips</span>
                             <h6 class="tips-h6">Social proof is a psychological phenomenon </h6>
 
-                            <p class="column-text" style="font-size: 0.85rem;  margin-top: -4px; font-weight: 300; line-height: 20px; color: #ffffffb9;">
+                            <p class="column-text" >
                                 In the context of marketing and business, social proof refers to the idea that people are more likely to trust and follow.... <a href="#" class="seemore-btn">see more</a></p>
                             <div class="column-foot">
                                 <span class="tips-hash"> #proof #Endorsements</span>
@@ -871,6 +880,69 @@
 
     </section>
 
+    <!-- =============================contact templete================  -->
+
+    <section id="contact">
+        <h5>Frequently Asked Questions</h5>
+        <img class="q-mark-img" src="image/question-mark (1).png" alt="" width="25px">
+
+        <div class="contact-me" id="">
+
+            <div class="accordion-container">
+                <button class="accordion-btn" id="acc-btn" title=" How do I start a project with you?"> How do I start a project with you?</button>
+                <div class="accordion-card">
+                    <p>To start a project, simply reach out to me through my Contact form, or email me directly. We’ll schedule a discovery call to discuss your needs, goals, and the scope of the project. Once we have a clear understanding, I’ll send you a proposal outlining the project details, timelines, and costs.</p>
+                </div>
+                <button class="accordion-btn" id="acc-btn" title="What is your development process?"> What is your development process?</button>
+                <div class="accordion-card">
+                    <p>My development process consists of several key phases:</p>
+                    <ol>
+                        <li><span>Discovery & Planning -</span>  We define the project scope, goals, and requirements.</li>
+                        <li><span>Design & Prototyping - </span> I create wireframes and prototypes for your approval.</li>
+                        <li><span>Development -</span>  I begin building the project using agile techniques, providing regular updates..</li>
+                        <li><span>Deployment & Maintenance - </span> I help deploy your project and offer ongoing support as needed.</li>
+                    </ol>
+                </div>
+                <button class="accordion-btn" id="acc-btn" title="What are your rates?"> What are your rates?</button>
+                <div class="accordion-card">
+                    <p>My rates depend on the scope and complexity of the project. For smaller projects, I offer hourly rates, and for larger, ongoing projects, I provide a fixed project rate. I can provide a detailed quote once we discuss the specifics of your needs. Please reach out to get a custom quote.</p>
+                </div>
+                <button class="accordion-btn" id="acc-btn" title="How do you handle deadlines">How do you handle deadlines?</button>
+                <div class="accordion-card">
+                    <p>I am committed to delivering projects on time. We’ll agree on realistic timelines during the planning phase, and I ensure that all milestones are met. If any unforeseen challenges arise, I’ll communicate promptly and discuss alternative solutions. My goal is to ensure that you’re always in the loop and confident in the progress..</p>
+                </div>
+        
+        
+            </div> 
+            <!--  -->
+
+            <div class="contact-container">
+            <h6>letter box</h6>
+            <img class="m-mark-img" src="image/sent.png" alt="" width="45px">
+            <div class="contact-form">
+                <p>If you're looking for a web developer who can bring your ideas to life, let's connect. I’d love to discuss how I can help your project succeed.</p>
+                <form action="https://formspree.io/f/xqaaqgyn" method="POST">
+                    <input type="text" name="name" id="contactName" placeholder="Enter Your Name"  required>
+                    <img id="m-mark-user" src="image/user (1).png" alt="" width="24px">
+                    <img id="m-mark-envelop" src="image/envelop1.png" alt="" width="24px">
+                    <input type="email" name="email" id="contactEmail" placeholder="Your Email Address" required>
+                    <textarea name="message" id="contactMsg" placeholder="Tell me something good" cols="48" rows="7" required></textarea>
+                    <input type="submit" value="submit" id="input-submit-btn" onclick="contactSubmit()">
+
+                </form>
+                <span class="contact-denger"> Please Fill up the Empty field</span>
+                <div class="contact-toast-box">
+                    <i class="fa-solid fa-check"></i>
+                    <span class="contact-toast-box-submit">your message has been sent</span>  
+                </div>
+                
+                
+            </div>
+            </div>
+
+       </div>
+    </section>
+
     <!-- =============================testimonial templete================  -->
     <section id="testimonial">
         <div class="testimonial-container">
@@ -997,68 +1069,7 @@
        
      </section>
     
-    <!-- =============================contact templete================  -->
-
-    <section id="contact">
-        <h5>Frequently Asked Questions</h5>
-        <img class="q-mark-img" src="image/question-mark (1).png" alt="" width="25px">
-
-        <div class="contact-me" id="">
-
-            <div class="accordion-container">
-                <button class="accordion-btn" id="acc-btn" title=" How do I start a project with you?"> How do I start a project with you?</button>
-                <div class="accordion-card">
-                    <p>To start a project, simply reach out to me through my Contact form, or email me directly. We’ll schedule a discovery call to discuss your needs, goals, and the scope of the project. Once we have a clear understanding, I’ll send you a proposal outlining the project details, timelines, and costs.</p>
-                </div>
-                <button class="accordion-btn" id="acc-btn" title="What is your development process?"> What is your development process?</button>
-                <div class="accordion-card">
-                    <p>My development process consists of several key phases:</p>
-                    <ol>
-                        <li><span>Discovery & Planning -</span>  We define the project scope, goals, and requirements.</li>
-                        <li><span>Design & Prototyping - </span> I create wireframes and prototypes for your approval.</li>
-                        <li><span>Development -</span>  I begin building the project using agile techniques, providing regular updates..</li>
-                        <li><span>Deployment & Maintenance - </span> I help deploy your project and offer ongoing support as needed.</li>
-                    </ol>
-                </div>
-                <button class="accordion-btn" id="acc-btn" title="What are your rates?"> What are your rates?</button>
-                <div class="accordion-card">
-                    <p>My rates depend on the scope and complexity of the project. For smaller projects, I offer hourly rates, and for larger, ongoing projects, I provide a fixed project rate. I can provide a detailed quote once we discuss the specifics of your needs. Please reach out to get a custom quote.</p>
-                </div>
-                <button class="accordion-btn" id="acc-btn" title="How do you handle deadlines">How do you handle deadlines?</button>
-                <div class="accordion-card">
-                    <p>I am committed to delivering projects on time. We’ll agree on realistic timelines during the planning phase, and I ensure that all milestones are met. If any unforeseen challenges arise, I’ll communicate promptly and discuss alternative solutions. My goal is to ensure that you’re always in the loop and confident in the progress..</p>
-                </div>
-        
-        
-            </div> 
-            <!--  -->
-
-            <div class="contact-container">
-            <h6>letter box</h6>
-            <img class="m-mark-img" src="image/sent.png" alt="" width="45px">
-            <div class="contact-form">
-                <p>If you're looking for a web developer who can bring your ideas to life, let's connect. I’d love to discuss how I can help your project succeed.</p>
-                <form action="https://formspree.io/f/xqaaqgyn" method="POST">
-                    <input type="text" name="name" id="contactName" placeholder="Enter Your Name"  required>
-                    <img id="m-mark-user" src="image/user (1).png" alt="" width="24px">
-                    <img id="m-mark-envelop" src="image/envelop1.png" alt="" width="24px">
-                    <input type="email" name="email" id="contactEmail" placeholder="Your Email Address" required>
-                    <textarea name="message" id="contactMsg" placeholder="Tell me something good" cols="48" rows="7" required></textarea>
-                    <input type="submit" value="submit" id="input-submit-btn" onclick="contactSubmit()">
-
-                </form>
-                <span class="contact-denger"> Please Fill up the Empty field</span>
-                <div class="contact-toast-box">
-                    <i class="fa-solid fa-check"></i>
-                    <span class="contact-toast-box-submit">your message has been sent</span>  
-                </div>
-                
-                
-            </div>
-            </div>
-
-       </div>
-    </section>
+    
 
 
     
@@ -1099,7 +1110,7 @@
                 <address>
                     <span>123 Old Dhaka</span>
                     <span>Dhaka, Bangladesh. </span>  
-                    <span  ><a href="#contact" style="color: orange;">sumitopticalit89@gmail.com</a> </span>  
+                    <span  ><a href="#contact" style="color: rgb(255, 60, 0); font-weight: 800; text-transform: lowercase; font-size: 12px;">sumitopticalit89@gmail.com</a> </span>  
                     <span>+880-1914-738-110 </span>  
                 </address>
                <div class="address-img">
@@ -1179,86 +1190,3 @@
     <script src="app.js"></script>
 </body>
 </html>
-<!-- action="https://formspree.io/f/xqaaqgyn" method="POST" -->
-<!-- Description of Services:
-
-Complete Website Development
-Design and Layout (Vs code, Figma)
-icon and Favicon (3 differernt link)
-font customizing (True)
-Frontend Development (HTML, CSS, JavaScript)
-React N/A
-Backend Development (false)
-Testing and QA (Bug Fixes, Performance Optimization)
-Deployment and Launch (false)
-Responsive Website (true)
-
-Elements & Empliment I used on framework
-1. nav (scroll view)
-2. dropdown & tooltips
-3. slide Menu bar
-4. CV link and scroll btn
-5. Counter 
-6. system animation
-7. Tab bar & toogle top header
-8.  skill bar animation
-9. slide carousol
-10. range slider
-11. card and content filter btn
-12. asider with scroll behaviour
-13. testimonial slider
-14. accordion
-15. letter box
-16. footer container
-
-Extra Empliment
-
-1. message box
-    a. toast bar
-    b. snackbar
-2. top scroll toggle
-
-Section and article 
-1. header section
-    a. navbar
-    b. menu bar
-    c. profile viewer
-2. main section
-    a. hero
-    b. about
-    c. tools 
-    d. skill & expertise
-    e. topics
-    f. more topics
-    g. work templete
-    h. more work templete
-    i. testimonial
-    j. FAQ accordion & contect
-3. footer section  
-    a. social link
-    b. address
-    c. custom link
-
-Responsive:
-1280px
-1120px
-1020px
-980px
-760px
-680px
-570px
-475px
-350px
-
-JavaScript Resolve:
-1. Cursor cursorPointer (not active)
-2. Menu scrollbarNavigation
-3. navbar scrollHeight
-4. number counter
-5. Tab scroll auto slide
-6. more moreTemplete Empliment (not active)
-7. toogle topScroll
-8. massage toastbox & snackbar
-9. featureFilter btn
-10. accordion -->
-

@@ -1,39 +1,48 @@
 
  
 
+.darkmood{
+   --primary-color:#bbb3b35d;
+   --primary-text-color: #000;
+   ---t-link:#b5c5d8;
+   --secondary-color: #dadee2;
+   --default-white:#1b1717;
+   --default-black:#ffffff;
+   ---link-a-color: rgb(228, 65, 15);
+   
+}
 :root{
     /* background color  */
-     --bg-primary: #92A8C8;
-    --bg-blue: #0EA6EC;
-    --bg-grey-blue: #22304485;
-    --bg-oxford-blue: #131B30;
-    --bg-secondary: #0F1729;  
-
-     --default-white:#fff;
-    --default-black:#000000f6;
+    --primary-color:#040e1a;
+    ---t-link:#061220e0;
+    --text-orange: rgb(255, 69, 12);
+    --secondary-color: #0d2138;
+    --default-white:#ffffff;
+    --default-black:#1b1717;
+   
+    
+   
 
     /* text-color  */
-     --text-white: hsla(0, 0%, 100%, 1);
-    --text-offWhite: hsla(199, 69%, 84%, 1);
-    --text-blue:  #0EA6EC;
-    --text-gray: hsla(217, 17%, 48%, 1);
-    --text-orange: rgb(216, 65, 19); 
+    ---link-a-color: #04A6CF;
+    --primary-text-color: #c7e9e9;
+     
 
     /* gradient color  */
     --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
     --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
-    --gradient-3: linear-gradient(0deg, #000d1a, transparent);
-    --gradient-4: linear-gradient(50deg,rgb(255, 60, 0),  #4ebef1fa 100%);
+    --gradient-3: linear-gradient(90deg, #000d1a, transparent);
+    --gradient-4: linear-gradient(50deg,rgb(228, 65, 15),  #4ebef1fa 100%);
    
     /* transition  */
     --transition-1: 0.25s ease;
-    --transition-2: 0.5s ease-in-out;
+    --transition-2: 0.5s ease;
     --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
     --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 
 
      /* fontsize  */
-     --font-h1:3.2rem;
+     --font-h1:2.3rem;
      --font-h2:2.0rem;
      --font-h3:1.8rem;
      --font-h4:1.6rem;
@@ -42,6 +51,10 @@
      --font-p:1rem;
      --font-a:0.7rem;
      --font-btn:1.2rem;
+
+     --font-6:0.6rem;
+     --font-8:0.8rem;
+     --font-9:0.9rem;
 
     }
     @media (max-width: 1280px){
@@ -97,6 +110,19 @@
         z-index: 1000;
         
     }
+    .menu-cross-btn a i{
+      color:var(--text-orange);
+      cursor: pointer;
+      font-weight: 800;
+      transition: var(--transition-2);
+     }
+     nav ul li.list:last-child{
+      margin-top: 10px;
+     }
+    #control{
+      right: 110px;
+      top: 20px;
+    }
     .head{
       height: 7vh;
     }
@@ -111,8 +137,7 @@
         margin-top: 15px;
         margin-right: 30px;
         max-width: 100%;
-        background: none;
-        background-color: var(--bg-blue);
+        color: var(--default-black);
         overflow: hidden;
         
     }
@@ -472,6 +497,10 @@
       right: -5px;
       
    }
+   #control{
+      right: 90px;
+      top: 19px;
+    }
    .about-text {
       max-width: 60%; 
    }
