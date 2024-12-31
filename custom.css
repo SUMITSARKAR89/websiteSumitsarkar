@@ -2,13 +2,14 @@
 ============= custom css  ==============
 -------------------------------------------*/
 .darkmood{
-   --primary-color:#bbb3b35d;
+   --primary-color:#CCB395;
    --primary-text-color: #000;
    ---t-link:#b5c5d8;
    --secondary-color: #dadee2;
    --default-white:#1b1717;
    --default-black:#ffffff;
    ---link-a-color: rgb(228, 65, 15);
+   --gradient-bg: linear-gradient( 100deg, #e4dfd8,  #ffffff  80%);
    
 }
 :root{
@@ -19,6 +20,7 @@
     --secondary-color: #0d2138;
     --default-white:#ffffff;
     --default-black:#1b1717;
+    --gradient-bg: linear-gradient( 100deg, #040e1a,  #040e1a 80%);
    
     
    
@@ -29,6 +31,7 @@
      
 
     /* gradient color  */
+    
     --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
     --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
     --gradient-3: linear-gradient(90deg, #000d1a, transparent);
@@ -134,7 +137,8 @@
         margin: 0 auto;
         font-family: "Manrope", sans-serif;
         font-size:var(--font-p) ;
-        background:var(--primary-color) ;
+        /* background:var(--primary-color) ; */
+        background: var(--gradient-bg);
         position: relative;
         color: var(--primary-text-color);
         transition:  all 0.5s ease-in-out;
@@ -169,7 +173,7 @@
     }
     button{
         font-size: var(--font-btn);
-       border: 1px solid red ;
+       border: 1px solid #000 ;
         cursor: pointer;
         outline: 0;
     }
@@ -180,12 +184,12 @@
     }
 
     ::-webkit-scrollbar-track { 
-        background-color: transparent; 
+        background-color: var(--default-black); 
         overflow: hidden;
     }
 
     ::-webkit-scrollbar-thumb {
-    background-color: var(--color-orange);
+    background-color: var(--text-orange);
     border-radius:100px;
    
 }
@@ -244,6 +248,7 @@
 
    .logo{
     width: 70px;
+    z-index: 999;
 
    
    }
