@@ -249,7 +249,7 @@
    }
 
    .logo{
-    width: 70px;
+    width: 45px;
     z-index: 999;
 
    
@@ -764,7 +764,7 @@
  }
  .hero-heading p{
     text-transform: capitalize;
-    color:rgb(26, 228, 26) ;
+    color:rgb(4, 126, 4) ;
     font-size: var(--font-a);
     position: relative;
     font-weight: 800;
@@ -2829,7 +2829,7 @@ span.contact-denger{
    max-width: 100%;
    margin-top: 80px;
    height: auto;
-   background-color: var(---t-link);
+   background-color:rgb(192, 49, 6);
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    border-radius: 15px;
    border: 1px solid var(--text-orange);
@@ -2883,7 +2883,8 @@ span.contact-denger{
    margin: 0 auto;
    font-weight: 600;
    color:var(--primary-text-color) ;
-   opacity: 0.7;
+   background-color:var(--default-black);
+   opacity: 1;
    line-height: 25px;
    transition: var(--transition-1);
    text-align: left;
@@ -2971,10 +2972,10 @@ span.contact-denger{
 
    
 }
-#my-social a{
+#my-social a:not(:last-child){
    margin: 2px;
-   padding: 2px;
-   
+   padding: 2px 6px;
+   color: #fff;
    font-size: var(--font-btn);
    transform: scale(1);
    transition: var(--transition-1);
@@ -3006,7 +3007,7 @@ span.contact-denger{
    margin-bottom: 25px;
    font-size: var(--font-p);
    font-weight: 300;
-   color: ;
+   color: #ffffffa2;
    opacity: 0.9;
    text-transform: capitalize;
    transition: var(--transition-1);
@@ -3016,7 +3017,7 @@ span.contact-denger{
 }
 #copywrites span{
    font-weight: 800;
-   color:var(--text-orange) ;
+   color: #500612 ;
 }
 .address-img{
    display: flex;
